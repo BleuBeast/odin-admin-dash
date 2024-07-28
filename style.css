@@ -1,0 +1,78 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
+}
+
+.sidebar {
+    background-color: blue;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    display: grid;
+    grid-template-rows: 1fr repeat(4, 2fr);
+    gap: 12px;
+}
+
+.sidebar-logo {
+    margin: 12px;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    align-items: center;
+}
+
+.sidebar-logo svg {
+    fill: white;
+    width: 2.5em;
+}
+
+.sidebar-logo h1 {
+    color: white;
+    margin: 0;
+}
+
+.sidebar-links {
+    margin-bottom: 12px;
+}
+
+.sidebar-links ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.sidebar-link {
+    margin: 12px;
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    align-items: center;
+}
+
+.sidebar-link svg {
+    fill: white;
+    width: 1.5em;
+}
+
+.sidebar-link h2 {
+    color: white;
+    margin: 0;
+}
+
+.header {
+    background-color: aliceblue;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.main-content {
+    background-color: gray;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
