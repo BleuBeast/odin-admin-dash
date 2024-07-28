@@ -7,7 +7,7 @@ body {
     padding: 0;
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 5fr;
 }
 
@@ -16,7 +16,7 @@ body {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
     display: grid;
-    grid-template-rows: 1fr repeat(4, 2fr);
+    grid-template-rows: 75px repeat(3, 2fr);
     gap: 12px;
 }
 
@@ -25,7 +25,7 @@ body {
     grid-row: 1 / 2;
     display: grid;
     grid-template-columns: 1fr 6fr;
-    align-items: center;
+    align-items: start;
 }
 
 .sidebar-logo svg {
@@ -49,7 +49,7 @@ body {
 }
 
 .sidebar-link {
-    margin: 12px;
+    margin: 16px;
     display: grid;
     grid-template-columns: 1fr 6fr;
     align-items: center;
@@ -66,9 +66,103 @@ body {
 }
 
 .header {
+    margin: 0 32px;
     background-color: aliceblue;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.header-search {
+    /* margin: 16px; */
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: 2em 1fr;
+    align-items: center;
+}
+
+.header-search svg {
+    width: 1.5em;
+}
+
+.header-search input {
+    width: 90%;
+    padding: 2px;
+    font-size: 1.5em;
+    border-width: 0;
+    border-radius: 16px;
+    background-color: lightgray;
+}
+
+.header-account {
+    /* margin: 16px; */
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr;
+    align-items: center;
+}
+
+.header-account svg {
+    margin-left: 16px;
+    width: 1.5em;
+}
+
+.header-account img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.header-welcome {
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 91px 3fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+}
+
+.header-welcome img{
+    margin: 8px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+.header-welcome p {
+    margin: 0;
+    padding: 0;
+}
+
+.header-welcome h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.header-buttons {
+    grid-row: 2 / 3;
+}
+
+.header-buttons ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+.header-buttons button {
+    width: 100px;
+    background-color: blue;
+    border: none;
+    border-radius: 12px;
+    padding: 8px 16px;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 1em;
 }
 
 .main-content {
